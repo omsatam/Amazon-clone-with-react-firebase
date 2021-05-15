@@ -82,7 +82,7 @@ function Payment() {
       <div className="payment__container">
         {!user && <h1>Please Sign In to continue</h1>}
         {getCartTotal(cart) === 0 ? (<h2>Please add items to your Cart to proceed further</h2>) :
-        ({user && (
+        (user && (
           <>
             <h1>
               Checkout (<Link to="/checkout">{cart?.length} items</Link>)
@@ -146,7 +146,7 @@ function Payment() {
               </div>
             </div>
           </>
-        )}
+        )
 )}
       </div>
     </div>
