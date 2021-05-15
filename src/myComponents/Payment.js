@@ -87,7 +87,7 @@ function Payment() {
             <h1>
               Checkout (<Link to="/checkout">{cart?.length} items</Link>)
             </h1>
-            // {/* Payment Section - delivery address */}
+             {/* Payment Section - delivery address */}
             <div className="payment__section">
               <div className="payment__title">
                 <h3>Delivery Address</h3>
