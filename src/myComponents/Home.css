@@ -1,0 +1,19 @@
+.home__image {
+  width: 100%;
+  z-index: -1;
+  /* object-fit: contain; */
+  margin-bottom: -150px;
+  height: 70vh;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow-x: scroll;
+  /* flex-wrap: wrap; */
+}
+.home__row::-webkit-scrollbar {
+  display: none;
+}
