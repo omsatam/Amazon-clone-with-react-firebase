@@ -55,6 +55,9 @@ function Payment() {
           .collection("orders")
           .doc(paymentIntent.id)
           .set({
+            name: user.displayName,
+            email: user.email,
+            address: user.photoURL,
             cart: cart,
             amount: paymentIntent.amount,
             created: paymentIntent.created,
