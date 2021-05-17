@@ -59,7 +59,7 @@ function Payment() {
             email: user.email,
             address: user.photoURL,
             cart: cart,
-            amount: paymentIntent.amount,
+            amount: paymentIntent.amount / 100,
             created: paymentIntent.created,
           });
 
