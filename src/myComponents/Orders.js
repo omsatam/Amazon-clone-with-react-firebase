@@ -33,7 +33,7 @@ function Orders() {
 
       <div className="orders__order">
         {orders?.map((order) => (
-          <Order order={order} />
+          <Order key={order.id} order={order} />
         ))}
       </div>
     </div>
